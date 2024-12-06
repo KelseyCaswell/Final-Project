@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="/Final Project/FinalProjectStyles.CSS"
+</head>
+
+   <header>
+    <div class="center">     
+    <h1>Kelsey Caswell's Final Project</h1> </div>
+   </header>
+   <p> <div class="center">
+    <h2>Get to know a little bit about me!</h2> </p> </div>
+</head>
+
+<h2> To get a better understanding of my future professional goals, take a look at what has brought me this far in my academic and personal career take a look at my experience.</h2>
+
+<body>
+<div class="center">
+    <button class="button" onclick="openPDF()">Read My Resume</button>
+
+    <script>
+        function openPDF() {
+            window.open('Resume.pdf', '_blank');
+        }
+    </script>
+    </div>
+</body>
+
+<body> 
+    <h2> Let's play a get to know me game!</h2>
+
+    <ol>
+        <li>
+            <div class="question">Where did I complete my undergraduate degree?</div>
+            <div class="answer"><button class= "quizbutton" onclick="checkAnswer('A',1)">A. Texas State</button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('B',1)">B. Texas A&M </button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('C',1)">C. University of North Texas</button></div>
+        </li>
+        <li>
+            <div class="question">What is my favorite drink?</div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('A',2)">A. Iced Tea</button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('B',2)">B. Iced Coffee</button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('C',2)">C. Chocolate Milk</button></div>
+        </li>
+        <li>
+            <div class="question">Where am I moving after graduation?</div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('A',3)">A. Austin</button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('B',3)">B. Chicago</button></div>
+            <div class="answer"><button class= "quizbutton"onclick="checkAnswer('C',3)">C. Dallas</button></div>
+        </li>
+    </ol>
+
+
+<script>
+const correctAnswers = {
+            1: 'B', 
+            2: 'A', 
+            3: 'C',  
+        };
+
+        function checkAnswer(answer) {
+            if (answer === 'A') {
+                alert("Correct answer!");
+            } else {
+                alert("Wrong answer. Try again.");
+            }
+        }
+    </script>
+</body>
+
+</html>
